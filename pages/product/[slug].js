@@ -34,6 +34,7 @@ const ProductDetails = ({ product, products }) => {
             {image &&
               image.map((image, idx) => (
                 <img
+                  key={idx}
                   src={urlFor(image)}
                   alt='product'
                   className={
